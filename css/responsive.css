@@ -33,11 +33,10 @@
     }
 
     /* Sobre */
-
     .sobre{
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
+        height: 90vh;
     }
 
     .sobre-texto {
@@ -65,7 +64,7 @@
 
     /* Habilidades */
     #habilidades {
-        height: 110vh;
+        height: 100vh;
         padding: 10px;
     }
     .habilidades {
@@ -78,7 +77,6 @@
 
     .sobre-habilidade {
         align-items: center;
-        justify-content: space-between;
         width: 100%;
         margin: 10px;
         box-sizing: content-box;
