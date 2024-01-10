@@ -5,11 +5,10 @@
     }
 
     #inicio {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         padding: 10px;
         height: 85vh;
-        background-color: red;
     }
 
     #inicio h1 {
