@@ -71,7 +71,7 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        height: 110vh;
+        height: 90vh;
         padding: 10px;
     }
 
@@ -79,7 +79,6 @@
         align-items: center;
         width: 100%;
         margin: 10px;
-        box-sizing: content-box;
     }
 
     .descricao {
