@@ -54,6 +54,7 @@
 
     .sobre-texto p {
         max-width: 100%;
+        text-align: center;
     }
 
     .my-img > img {
@@ -106,11 +107,5 @@
 
     #projetos, #contato {
         display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .sobre-texto p {
-        max-width: 100%;
     }
 }
