@@ -1,0 +1,86 @@
+/* Section do Sobre */
+#sobre {
+    padding: 0.938rem;
+    background-color: #151515;
+}
+
+/* Conteúdo img + texto */
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Div da img  */
+.my-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Imagem do Sobre Mim */
+.my-img > img {
+    position: relative;
+    bottom: 2.813rem;
+    width: 70%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover da img para deixar ela na sua cor real */
+.my-img img:hover {
+    filter: grayscale(0) brightness(100%);
+}
+
+/* Div do h2 + p Sobre Mim */
+.sobre-texto {
+    margin: 0 0.938rem 0 0;
+    width: 50%;
+}
+
+/* h2 "Sobre Mim" */
+.sobre-texto h2 {
+    font-size: 2.2em;
+    color: var(--cian);
+    margin-bottom: 0.5rem;
+}
+
+/* Texto do Sobre Mim */
+.sobre-texto p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    margin: 0 0 0.938rem 0;
+}
+
+.welcome {
+    color: var(--aqua);
+}
+
+/* Botão para ver CV */
+.sobre-texto a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.938rem 2.5rem;
+    margin: 0.625rem 0 0 0;
+    width: 12.5rem;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: var(--textcolordark);
+    border-radius: 0.625rem;
+    text-decoration: none;
+    background-color: var(--bgbtncolordark);
+    box-shadow: 0.063rem 0.063rem 0.938rem var(--bgbtncolordark);
+    transition: all .3s ease-in-out;
+}
+
+/* Mudar a Color, Background-color e adicionar um box-shadow */
+.sobre-texto a:hover {
+    box-shadow: 0.313rem 0.313rem 1.25rem var(--cian);
+    color: var(--textcolorlight);
+    background-color: var(--hoverbgbtncolordark);
+}

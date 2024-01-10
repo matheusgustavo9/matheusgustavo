@@ -1,0 +1,219 @@
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 15px;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 70vh;
+}
+
+#habilidades h2 {
+    font-size: 2.2em;
+    color: var(--cian);
+    margin-bottom: 0.563rem;
+}
+
+.sobre-habilidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    width: 55%;
+    height: 80%;
+}
+
+.descricao {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.sobre-habilidade h3 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.sobre-habilidade article p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    margin: 0.938rem 0 1.563rem 0;
+}
+
+.icon-habilidade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    padding: 0 1.25rem 0 0;
+}
+
+.box-hbld {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.625rem;
+    height: 5.625rem;
+    padding: 15px;
+    margin: 0 0 0.625rem 0.625rem;
+    background-color: #151515;
+    box-shadow: 0.063rem 0.063rem 0.625rem #252525;
+    border: 0.063rem solid var(--aqua);
+    border-radius: 0.313rem;
+    cursor: pointer;
+}
+
+.box-hbld img {
+    filter:  grayscale(100%);
+    transform: scale(1.3);
+}
+
+.box-hbld:hover img {
+    filter: grayscale(0) drop-shadow(0.063rem 0.063rem 0.5rem var(--blue));
+}
+
+.figma img, .github img {
+    width: 3.438rem;
+}
+
+.github img {
+    filter: brightness(0.8);
+}
+
+.hidden {
+    display: none;
+}
+
+.grafico-sobre-habilidade {
+    height: 6vh;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #111111;
+    position: relative;
+    border-radius: 1.25rem;
+    outline: 0.125rem solid #202020;
+    box-shadow: 0 0 0.625rem var(--blue);
+}
+
+.porcentagem-grafico {
+    height: 6vh;
+    margin: 0 auto;
+    background-color: var(--blue);
+    border-radius: 1.25rem;
+    position: absolute;
+}
+
+.grafico-sobre-habilidade .numero-porcentagem {
+    font-size: 1.5em;
+    font-weight: 600;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sobre-habilidade article{
+    display: none;
+}
+
+.sobre-habilidade article.ativo {
+    display: block;
+    animation: mostrar .5s forwards;
+}
+
+@keyframes mostrar {
+    from {
+        opacity: 0;
+        transform: matrix3d(-1.875rem, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: matrix3d(0, 0, 0);
+    }
+}
+.remove{
+    display: none;
+}
+
+.html .grafico-sobre-habilidade .porcentagem-grafico{
+    width: 90%;
+    animation: porcentagem-html 1s linear;
+}
+.css .grafico-sobre-habilidade .porcentagem-grafico{
+    width: 85%;
+    animation: porcentagem-css 1s linear;
+}
+.js .grafico-sobre-habilidade .porcentagem-grafico{
+    width: 60%;
+    animation: porcentagem-js 1s linear;
+}
+.git .grafico-sobre-habilidade .porcentagem-grafico{
+    width: 60%;
+    animation: porcentagem-git 1s linear;
+}
+.github .grafico-sobre-habilidade .porcentagem-grafico{
+    width: 80%;
+    animation: porcentagem-github 1s linear;
+}
+.figma .grafico-sobre-habilidade .porcentagem-grafico{
+    width: 60%;
+    animation: porcentagem-figma 1s linear;
+}
+
+@keyframes porcentagem-html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+@keyframes porcentagem-css {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+@keyframes porcentagem-js {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+@keyframes porcentagem-git {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+@keyframes porcentagem-github {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+@keyframes porcentagem-figma {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}

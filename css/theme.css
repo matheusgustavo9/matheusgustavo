@@ -1,0 +1,227 @@
+/* Dark Mode - Light Mode */
+.tema {
+    margin: 0.938rem 0.938rem 0 0.938rem;
+    position: relative;
+}
+
+.tema:hover {
+    border: none;
+}
+
+.checkbox-tema {
+    display: none;
+}
+
+/* Inicio */
+.light,
+.light header {
+    background-color: var(--bgcolorlight);
+}
+
+.light li {
+    color: var(--textcolorlight);
+}
+
+.light #inicio h1 {
+    color: var(--textcolorlight);
+}
+
+.light .nome {
+    color: var(--aqua);
+}
+
+.light #inicio div img {
+    filter: drop-shadow(0 0 0.625rem var(--cian)) brightness(90%);
+}
+
+.light #inicio aside a {
+    background-color: var(--bgbtncolorlight);
+    box-shadow: 0.063rem 0.063rem 0.938rem var(--bgbtncolorlight);
+}
+
+.light #inicio aside a:hover{
+    box-shadow: 0.313rem 0.313rem 1.25rem var(--cian);
+    background-color: var(--hoverbgbtncolorlight);
+}
+
+.light #inicio aside a img{
+    filter: brightness(0);
+}
+
+.light #inicio aside a:hover img {
+    filter: brightness(20);
+}
+
+/* Sobre */
+.light #sobre {
+    background-color: #f0f0f0;
+}
+
+.light .sobre-texto h2 {
+    color: var(--aqua);
+}
+
+.light .sobre-texto p {
+    color: var(--textcolorlight);
+    font-size: 1.22rem;
+}
+
+.light .welcome {
+    color: var(--cian);
+}
+
+.light .sobre-texto a {
+    background-color: var(--bgbtncolorlight);
+    color: var(--textcolorlight);
+    box-shadow: 0.063rem 0.063rem 0.938rem var(--bgbtncolorlight);
+}
+
+.light .sobre-texto a:hover {
+    box-shadow: 0.313rem 0.313rem 1.25rem var(--cian);
+    background-color: var(--hoverbgbtncolorlight);
+    color: var(--textcolordark);
+}
+
+/* Habilidades */ 
+.light .box-hbld {
+    background-color: var(--bgbtncolorlight);
+    border: 0.063rem solid var(--cian);
+}
+
+.light #habilidades h2 {
+    color: var(--aqua);
+}
+
+.light .box-hbld img {
+    filter: grayscale(100);
+}
+
+.light .box-hbld:hover img {
+    filter:  grayscale(0) drop-shadow(0.063rem 0.063rem 0.5rem var(--blue));
+}
+
+.light .github img {
+    filter: brightness(0.4);
+}
+
+.light .github:hover img{
+    filter: brightness(0) drop-shadow(0.063rem 0.063rem 0.5rem var(--blue));
+}
+
+.light .descricao {
+    color: var(--textcolorlight);
+}
+
+.light .sobre-habilidade article p {
+    color: var(--textcolorlight);
+}
+
+.light .sobre-habilidade h3 {
+    color: var(--textcolorlight);
+}
+
+.light .grafico-sobre-habilidade {
+    background-color: #ddd;
+    box-shadow: 0 0 0.625rem var(--cian);
+}
+
+.light .porcentagem-grafico {
+    background-color: var(--cian);
+}
+
+/* Projeto */
+.light .projetos {
+    background-color: #eeeeee;
+    box-shadow: 0.125rem 0.125rem 0.625rem var(--shadowlight);
+}
+
+.light .projetos h2 {
+    color: var(--aqua);
+}
+
+.light .my-project {
+    box-shadow: 0.125rem 0.125rem 0.625rem var(--shadowlight);
+}
+
+.light .my-project:hover {
+    box-shadow: 0 0 0.625rem var(--blue);
+}
+
+.light .em-breve {
+    background-color: var(--bgcolorlight);
+}
+
+.light .loading {
+    border: 0.5rem solid var(--shadowlight);
+    border-top-color: var(--aqua);
+}
+
+.light .info-pjt {
+    backdrop-filter: blur(0.625rem);
+}
+
+.light .info-pjt h3 {
+    color: var(--textcolorlight);
+}
+
+.light .view-pjt {
+    color: var(--textcolorlight);
+    background-color: var(--bgbtncolorlight);
+}
+
+.light .view-pjt:hover {
+    color: var(--textcolordark);
+    background-color: var(--hoverbgbtncolorlight);
+    box-shadow: 0 0 0.125rem var(--aqua);
+}
+
+/* Contato */
+.light .box-contato {
+    background-color: #ececec;
+    border: 0.063rem solid #bebebe;
+    box-shadow: 0.125rem 0.125rem 0.625rem var(--shadowlight);
+}
+
+.light .box-contato:hover {
+    box-shadow: 0.125rem 0.125rem 0.625rem var(--cian);
+}
+
+.light .box-contato h2, 
+.light .box-contato p{
+    color: var(--textcolorlight);
+}
+
+/* Footer */
+.light footer p {
+    color: var(--textcolorlight);
+}
+
+.light .voltar-ao-topo {
+    background-color: #ececec;
+    box-shadow: 0 0 0.625rem var(--cian);
+}
+
+.light .voltar-ao-topo:hover {
+    box-shadow: 0 0 0.125rem var(--blue);
+    background-color: var(--hoverbgbtncolorlight);
+}
+
+.light .voltar-ao-topo .fa-arrow-up {
+    color: var(--textcolorlight);
+}
+
+.light .voltar-ao-topo:hover .fa-arrow-up {
+    color: var(--textcolordark);
+}
+
+.light .fa-moon {
+    display: none;
+    color: black;
+}
+
+.light .fa-sun {
+    display: block;
+    color: black;
+    position: relative;
+    bottom: 6px;
+}

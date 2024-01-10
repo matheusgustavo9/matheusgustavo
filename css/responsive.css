@@ -1,0 +1,116 @@
+@media screen and (max-width: 1020px) {
+    /* Inicio */
+    nav ul {
+        display: none;
+    }
+
+    #inicio {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px;
+        height: 85vh;
+    }
+
+    #inicio h1 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    #inicio .nome {
+        font-size: 1.5em;
+    }
+
+    #inicio aside {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #inicio div img {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Sobre */
+
+    .sobre{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .sobre-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .sobre-texto h2 {
+        text-align: center;
+    }
+
+    .sobre-texto p {
+        max-width: 100%;
+    }
+
+    .my-img > img {
+        filter: grayscale(0);
+        width: 85%;
+        bottom: 25px;
+    }
+
+    /* Habilidades */
+    #habilidades {
+        height: 110vh;
+        padding: 10px;
+    }
+    .habilidades {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 110vh;
+        padding: 10px;
+    }
+
+    .sobre-habilidade {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 10px;
+        box-sizing: content-box;
+    }
+
+    .descricao {
+        font-size: 1.3em;
+    }
+
+    .sobre-habilidade article p {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .icon-habilidade {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .box-hbld {
+        width: 110px;
+        height: 110px;
+    }
+
+    #projetos, #contato {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sobre-texto p {
+        max-width: 100%;
+    }
+}

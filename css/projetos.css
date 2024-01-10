@@ -1,0 +1,133 @@
+#projetos {
+    display: flex;
+    justify-content: center;
+    padding: 0.625rem;
+}
+
+/* Div do projeto todo */
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    padding: 0.938rem;
+    background-color: #151515;
+    border-radius: 0.5rem;
+    border: 0.125rem solid var(--aqua);
+    animation: animation-border 1s linear infinite alternate ;
+    box-shadow: 0.125rem 0.125rem 0.625rem #2b2b2b;
+}
+
+/* "Meus Projetos" */
+.projetos h2 {
+    font-size: 2.4em;
+    margin: 0.625rem;
+}
+
+/* Todos os Projetos */
+.all-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.938rem;
+    justify-content: center;
+    width: 90%;
+}
+
+.my-project {
+    transition: all .5s ease;
+    box-shadow: 0.125rem 0.125rem 0.625rem #202020;
+    border-radius: 0.938rem;
+}
+
+.my-project:hover {
+    box-shadow: 0 0 0.625rem var(--blue);
+} 
+
+/* As imagens dos projetos */
+.img-projeto img {
+    width: 23.75rem;
+    border-radius: 0.938rem 0.938rem 0 0;
+    margin-bottom: -0.313rem;
+}
+
+.em-breve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23.75rem;
+    height: 28vh;
+    background-color: #1A1A1A;
+    border-radius: 0.938rem 0.938rem 0 0;
+}
+
+.loading {
+    width: 5rem;
+    height: 5rem;
+    border: 0.5rem solid #434343;
+    border-top-color: var(--blue);
+    border-radius: 50%;
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Informações dos projetos */
+.info-pjt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+    backdrop-filter: blur(0.625rem);
+    border-radius: 0 0 0.938rem 0.938rem;
+    gap: 0.313rem;
+}
+
+/* Título do Projeto */
+.info-pjt h3 {
+    font-size: 1.4em;
+    margin: 0.313rem 0.125rem 0.313rem 0.313rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.view-pjt {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.75rem;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #1A1A1A;
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: all .5s ease-in-out;
+}
+
+.view-pjt:hover {
+    box-shadow: 0 0 0.75rem var(--cian);
+    color: #1A1A1A;
+    background-color: #f5f5f5;
+}
+
+.all-projects .my-project:nth-child(2) .view-pjt,
+.my-project:nth-child(3) .view-pjt,
+.my-project:nth-child(4) .view-pjt {
+    cursor: not-allowed;
+}
+
+@keyframes animation-border {
+    0% {
+        border-color: var(--aqua);
+    }
+    50% {
+        border-color: var(--cian);
+    }
+    100% {
+        border-color: var(--blue);
+    }
+}
