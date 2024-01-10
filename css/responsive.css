@@ -5,7 +5,7 @@
     }
 
     #inicio {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         padding: 10px;
         height: 85vh;
@@ -36,7 +36,7 @@
     .sobre{
         flex-direction: column;
         justify-content: center;
-        height: 90vh;
+        height: 85vh;
     }
 
     .sobre-texto {
@@ -64,7 +64,7 @@
 
     /* Habilidades */
     #habilidades {
-        height: 100vh;
+        height: 90vh;
         padding: 10px;
     }
     .habilidades {
@@ -73,6 +73,10 @@
         width: 100%;
         height: 90vh;
         padding: 10px;
+    }
+
+    #habilidades h2 {
+        margin: 10px 0 0 0;
     }
 
     .sobre-habilidade {
@@ -100,6 +104,15 @@
     .box-hbld {
         width: 110px;
         height: 110px;
+    }
+
+    .grafico-sobre-habilidade {
+        width: 100%;
+        height: 5vh;
+    }
+
+    .porcentagem-grafico {
+        height: 5vh;
     }
 
     #projetos, #contato {
