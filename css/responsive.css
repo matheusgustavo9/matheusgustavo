@@ -64,14 +64,14 @@
 
     /* Habilidades */
     #habilidades {
-        height: 90vh;
+        height: 85vh;
         padding: 10px;
     }
     .habilidades {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+        height: 85vh;
         padding: 10px;
     }
 
@@ -86,7 +86,7 @@
     }
 
     .descricao {
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
 
     .sobre-habilidade article p {
@@ -115,7 +115,31 @@
         height: 5vh;
     }
 
-    #projetos, #contato {
-        display: none;
+    /* Projetos */
+    .all-projects {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .img-projeto img {
+        width: 340px;
+    }
+    
+    .em-breve {
+        width: 340px;
+        height: 17.5vh;
+    }
+
+    #contato .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #contato img {
+        width: 60px;
+    }
+
+    .box-contato {
+        padding: 15px;
     }
 }
