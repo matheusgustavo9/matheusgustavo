@@ -1,4 +1,4 @@
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
     /* Inicio */
     nav ul {
         display: none;
@@ -142,4 +142,8 @@
     .box-contato {
         padding: 15px;
     }
+}
+
+@media screen and (max-width: 767px) {
+    /* Inicio */
 }
