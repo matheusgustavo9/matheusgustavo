@@ -70,10 +70,25 @@
     }
     
     /* Inicio */
+    .tema {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tema .fa-moon {
+        top: 0.6rem;
+    }
+
+    .tema .fa-sun {
+        position: relative;
+        top: 0.8rem;
+    }
+
     .tema span {
         display: block;
         font-size: 1em;
         margin: 10px;
+        color: var(--textcolorlight);
     }
 
     nav a {
