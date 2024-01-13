@@ -24,7 +24,7 @@
     }
 
     #menu a li {
-        border-bottom: 2px solid var(--blue);
+        border-bottom: 4px solid var(--blue);
         padding: 0.5rem 0;
         margin: 0 4rem;
     }
