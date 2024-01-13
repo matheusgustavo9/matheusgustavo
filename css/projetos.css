@@ -22,7 +22,7 @@
 /* "Meus Projetos" */
 .projetos h2 {
     font-size: 2.4em;
-    margin: 0.625rem;
+    margin: 0 0 0.625rem 0;
     color: var(--cian);
 }
 

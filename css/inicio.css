@@ -47,7 +47,11 @@ header {
 }
 
 /* Navegação */
-nav ul {
+#btn-mobile {
+    display: none;
+}
+
+#menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -70,6 +74,10 @@ nav li:hover {
 
 .tema {
     font-size: 2em;
+}
+
+.tema span {
+    display: none;
 }
 
 .tema .fa-moon {

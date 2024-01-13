@@ -1,7 +1,46 @@
 @media screen and (max-width: 1024px) {
     /* Inicio */
-    nav ul {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
         display: none;
+
+        position: absolute;
+        width: 100%;
+        height: calc(82vh - 12.1vh);
+        top: 12.1vh;
+        right: 0;
+        background-color: rgba(23, 145, 190, 0.4);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        text-align: center;
+    }
+
+    #nav.active #menu {
+        display: block;
+    }
+
+    #menu a li {
+        border-bottom: 2px solid var(--blue);
+        padding: 0.5rem 0;
+        margin: 0 2rem;
+    }
+
+    .tema span {
+        display: block;
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    nav a {
+        font-size: 1.4em;
+    }
+
+    .logo {
+        font-size: 3.2em;
+        margin: 0 0 0 10px;
     }
 
     #inicio {
