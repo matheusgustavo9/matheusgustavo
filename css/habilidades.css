@@ -102,6 +102,7 @@
     border-radius: 1.25rem;
     outline: 0.125rem solid #202020;
     box-shadow: 0 0 0.625rem var(--blue);
+    text-align: center;
 }
 
 .porcentagem-grafico {
@@ -116,9 +117,7 @@
     font-size: 1.5em;
     font-weight: 600;
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 44%;
 }
 
 .sobre-habilidade article{
@@ -157,11 +156,11 @@
     animation: porcentagem-js 1s linear;
 }
 .git .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 60%;
+    width: 30%;
     animation: porcentagem-git 1s linear;
 }
 .github .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 80%;
+    width: 60%;
     animation: porcentagem-github 1s linear;
 }
 .figma .grafico-sobre-habilidade .porcentagem-grafico{
@@ -198,7 +197,7 @@
         width: 0%;
     }
     to {
-        width: 60%;
+        width: 30%;
     }
 }
 @keyframes porcentagem-github {
@@ -206,7 +205,7 @@
         width: 0%;
     }
     to {
-        width: 80%;
+        width: 60%;
     }
 }
 @keyframes porcentagem-figma {

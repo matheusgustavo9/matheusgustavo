@@ -88,7 +88,6 @@
         display: block;
         font-size: 1em;
         margin: 10px;
-        color: var(--textcolorlight);
     }
 
     nav a {
@@ -241,8 +240,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* Inicio */
+    /* Habiliades */
 
-    /* Projetos */
 
 }

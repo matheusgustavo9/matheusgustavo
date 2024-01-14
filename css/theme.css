@@ -18,6 +18,10 @@
     background-color: var(--bgcolorlight);
 }
 
+.light .tema span {
+    color: var(--textcolorlight);
+}
+
 .light li {
     color: var(--textcolorlight);
 }
