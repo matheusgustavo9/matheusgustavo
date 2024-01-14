@@ -94,7 +94,7 @@
 }
 
 .grafico-sobre-habilidade {
-    height: 6vh;
+    height: 7vh;
     width: 80%;
     margin: 0 auto;
     background-color: #111111;
@@ -106,7 +106,7 @@
 }
 
 .porcentagem-grafico {
-    height: 6vh;
+    height: 7vh;
     margin: 0 auto;
     background-color: var(--blue);
     border-radius: 1.25rem;
@@ -117,7 +117,9 @@
     font-size: 1.5em;
     font-weight: 600;
     position: absolute;
-    left: 44%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sobre-habilidade article{

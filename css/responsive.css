@@ -24,9 +24,7 @@
     }
 
     #menu a li {
-        border-bottom: 4px solid var(--blue);
-        padding: 0.5rem 0;
-        margin: 0 4rem;
+        padding: 0.7rem 0;
     }
 
     #btn-mobile {
@@ -104,6 +102,7 @@
         justify-content: center;
         padding: 10px;
         height: 85vh;
+        gap: 10px;
     }
 
     #inicio h1 {
@@ -128,10 +127,14 @@
     }
 
     /* Sobre */
+    #sobre {
+        padding: 20px;
+    }
+
     .sobre{
         flex-direction: column;
         justify-content: center;
-        height: 85vh;
+        height: 80vh;
     }
 
     .sobre-texto {
@@ -153,8 +156,7 @@
 
     .my-img > img {
         filter: grayscale(0);
-        width: 85%;
-        bottom: 25px;
+        max-width: 100%;
     }
 
     /* Habilidades */
@@ -185,7 +187,7 @@
     }
 
     .sobre-habilidade article p {
-        font-size: 1.1em;
+        font-size: 1.2em;
         text-align: center;
     }
 
@@ -225,6 +227,7 @@
         height: 20vh;
     }
 
+    /* Contato */
     #contato .container {
         flex-wrap: wrap;
         gap: 20px;
@@ -240,7 +243,49 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* Habiliades */
+    #inicio {
+        height: 70vh;
+    }
 
+    #habilidades {
+        height: 90vh;
+    }
 
+    .sobre-habilidade {
+        width: 100%;
+    }
+
+    .descricao {
+        font-size: 1.2em;
+    }
+
+    #contato .container {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.65em;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .sobre {
+        height: 82vh;
+    }
+
+    #contato {
+        height: 40vh;
+    }
+
+    #contato img {
+        width: 50px;
+    }
+
+    .box-contato h2 {
+        font-size: 1.3em;
+    }
+
+    .box-contato p {
+        font-size: 0.8em;
+    }
 }
