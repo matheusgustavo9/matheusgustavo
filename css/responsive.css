@@ -18,13 +18,14 @@
     }
 
     #nav.ativo #menu {
-        height: calc(65vh - 12.1vh);
+        height: calc(70vh - 12.1vh);
         visibility: visible;
         overflow-y: auto;
     }
 
     #menu a li {
         padding: 0.7rem 0;
+        font-size: 1.3em;
     }
 
     #btn-mobile {
@@ -93,8 +94,11 @@
     }
 
     .logo {
-        font-size: 3.2em;
-        margin: 0 0 0 10px;
+        margin-left: 2rem;
+    }
+
+    .logo img {
+        transform: scale(2.5);
     }
 
     #inicio {
@@ -245,6 +249,11 @@
 @media screen and (max-width: 600px) {
     #inicio {
         height: 70vh;
+        padding: 20px;
+    }
+
+    .sobre {
+        height: 75vh;
     }
 
     #habilidades {
