@@ -150,11 +150,11 @@
     animation: porcentagem-html 1s linear;
 }
 .css .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 85%;
+    width: 80%;
     animation: porcentagem-css 1s linear;
 }
 .js .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 60%;
+    width: 40%;
     animation: porcentagem-js 1s linear;
 }
 .git .grafico-sobre-habilidade .porcentagem-grafico{
@@ -183,7 +183,7 @@
         width: 0%;
     }
     to {
-        width: 85%;
+        width: 80%;
     }
 }
 @keyframes porcentagem-js {
@@ -191,7 +191,7 @@
         width: 0%;
     }
     to {
-        width: 60%;
+        width: 40%;
     }
 }
 @keyframes porcentagem-git {
