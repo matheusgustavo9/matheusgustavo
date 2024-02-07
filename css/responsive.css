@@ -314,7 +314,7 @@
     }
 
     .habilidades {
-        height: 110vh;
+        height: 115vh;
     }
 
     .descricao {
@@ -324,6 +324,10 @@
     .box-hbld {
         width: 90px;
         height: 90px;
+    }
+
+    .info-pjt h3 {
+        font-size: 1.2em;
     }
 
     #contato {
