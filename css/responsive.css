@@ -170,6 +170,7 @@
         height: 85vh;
         padding: 10px;
     }
+
     .habilidades {
         justify-content: center;
         flex-direction: column;
@@ -285,14 +286,18 @@
 }
 
 @media screen and (max-width: 370px) {
+    .logo img {
+        width: auto;
+        transform: scale(2.5);
+    }
+
     #inicio {
         height: auto;
         margin: 15px;
     }
 
-    .logo img {
-        width: auto;
-        transform: scale(2.5);
+    #inicio .nome {
+        font-size: 1.3em;
     }
 
     .sobre {
@@ -310,6 +315,15 @@
 
     .habilidades {
         height: 110vh;
+    }
+
+    .descricao {
+        font-size: 0.9em;
+    }
+
+    .box-hbld {
+        width: 90px;
+        height: 90px;
     }
 
     #contato {
