@@ -321,6 +321,14 @@
         font-size: 0.9em;
     }
 
+    .sobre-habilidade h3 {
+        font-size: 1.7em;
+    }
+
+    .sobre-habilidade article p {
+        font-size: 1.1em;
+    }
+
     .box-hbld {
         width: 90px;
         height: 90px;
