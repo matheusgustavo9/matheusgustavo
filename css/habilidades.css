@@ -93,35 +93,6 @@
     display: none;
 }
 
-.grafico-sobre-habilidade {
-    height: 7vh;
-    width: 80%;
-    margin: 0 auto;
-    background-color: #111111;
-    position: relative;
-    border-radius: 1.25rem;
-    outline: 0.125rem solid #202020;
-    box-shadow: 0 0 0.625rem var(--blue);
-    text-align: center;
-}
-
-.porcentagem-grafico {
-    height: 7vh;
-    margin: 0 auto;
-    background-color: var(--blue);
-    border-radius: 1.25rem;
-    position: absolute;
-}
-
-.grafico-sobre-habilidade .numero-porcentagem {
-    font-size: 1.5em;
-    font-weight: 600;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .sobre-habilidade article{
     display: none;
 }
@@ -143,78 +114,4 @@
 }
 .remove{
     display: none;
-}
-
-.html .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 90%;
-    animation: porcentagem-html 1s linear;
-}
-.css .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 80%;
-    animation: porcentagem-css 1s linear;
-}
-.js .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 40%;
-    animation: porcentagem-js 1s linear;
-}
-.git .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 30%;
-    animation: porcentagem-git 1s linear;
-}
-.github .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 60%;
-    animation: porcentagem-github 1s linear;
-}
-.figma .grafico-sobre-habilidade .porcentagem-grafico{
-    width: 60%;
-    animation: porcentagem-figma 1s linear;
-}
-
-@keyframes porcentagem-html {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 90%;
-    }
-}
-@keyframes porcentagem-css {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 80%;
-    }
-}
-@keyframes porcentagem-js {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 40%;
-    }
-}
-@keyframes porcentagem-git {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 30%;
-    }
-}
-@keyframes porcentagem-github {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 60%;
-    }
-}
-@keyframes porcentagem-figma {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 60%;
-    }
 }

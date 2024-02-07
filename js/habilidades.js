@@ -5,7 +5,7 @@ function mostrarDescricaoDaHabilidade(){
 
     if(iconeDaHabilidade.length && descricaoDaHabilidade.length){
         let msg = '/* Passe o mouse por cima de alguma habilidade */' 
-        if (window.innerWidth <= 800){
+        if (window.innerWidth <= 860){
             msg = '/* Clique em alguma habilidade */'
         } 
 
