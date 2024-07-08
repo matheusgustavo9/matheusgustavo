@@ -1,0 +1,23 @@
+:root {
+    --aqua: #2fcfcf;
+    --blue: #1818a8;
+    --cian: #1792BE;
+    --textcolor: #f5f5f5;
+    --roxoescuro: #6A0DAD;
+    --roxo: #7719B9;
+    --roxoclaro: #9C1AFF;
+    
+    /* Dark Mode */
+    --bgcolordark: #111010;
+    --textcolordark: #f5f5f5;
+    --bgbtncolordark: #1f1f1f;
+    --hoverbgbtncolordark: #dddddd;
+
+    /* Light Mode */
+    --bgcolorlight: #f6f6f6;
+    --textcolorlight: #111010;
+    --bgbtncolorlight: #dddddd;
+    --hoverbgbtncolorlight: #1f1f1f;
+
+    --shadowlight: #bdbdbd;
+}

@@ -15,7 +15,7 @@
 }
 
 #contato img {
-    max-width: 4.375rem;
+    width: 70px;
     margin: 0.313rem;
 }
 
@@ -24,37 +24,65 @@
 }
 
 .box-contato {
+    width: 19vw;
+    height: 32vh;
     background-color: #151515;
     border: 0.063rem solid #242424;
     border-radius: 0.938rem;
     padding: 20px;
     box-shadow: 0.125rem 0.125rem 0.625rem #151515;
-    transition: all .8s ease;
+    transition: box-shadow .3s ease-in-out;
 }
 
 .box-contato:hover {
-    box-shadow: 0.125rem 0.125rem 0.625rem var(--aqua);
+    box-shadow: 0.125rem 0.125rem 0.625rem var(--roxo);
 }
 
 .box-contato h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 600;
+    font-family: "Poppins";
+    letter-spacing: 1px;
+    text-decoration: 1px underline;
+    text-underline-offset: 2px;
     margin-bottom: 0.313rem;
 }
 
 .box-contato p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
+    font-family: "Poppins";
+}
+
+.box-contato img {
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+}
+
+.github img {
+    filter: invert(1);
+}
+
+.linkedin h2 {
+    color: #1183C3;
+}
+
+.whatsapp h2 {
+    color: #0ED75A;
 }
 
 .linkedin img {
-    transform: scale(1.1);
+    transform: scale(1.11);
+}
+
+.whatsapp img {
+    transform: scale(0.95);
 }
 
 .box-contato:hover img {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .linkedin:hover img {
-    transform: scale(1.12);
+    transform: scale(1.19);
 }

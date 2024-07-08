@@ -1,6 +1,5 @@
 /* Dark Mode - Light Mode */
 .tema {
-    margin: 0.938rem 0.938rem 0 0.938rem;
     position: relative;
 }
 
@@ -22,7 +21,7 @@
     color: var(--textcolorlight);
 }
 
-.light li {
+.light a {
     color: var(--textcolorlight);
 }
 
@@ -218,14 +217,12 @@
     color: var(--textcolordark);
 }
 
-.light .fa-moon {
+.light .bi-moon-fill {
     display: none;
     color: black;
 }
 
-.light .fa-sun {
-    display: block;
+.light .bi-sun-fill {
+    display: flex;
     color: black;
-    position: relative;
-    bottom: 6px;
 }

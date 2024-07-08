@@ -12,8 +12,19 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/theme.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/root.css">
 
-    <script src="https://kit.fontawesome.com/1f4048c8d4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
 </head>
 <body>
     <header class="animation-border-header">
@@ -21,24 +32,25 @@
             <!-- <span><<span>/</span>></span> -->
             <img src="img/logo.svg" alt="">
         </div>
-        <nav id="nav">
+        <nav id="nav" class="navbar">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu" role="menu">
-                <a href="#inicio"><li>Inicio</li></a>
-                <a href="#sobre"><li>Sobre</li></a>
-                <a href="#habilidades"><li>Habilidades</li></a>
-                <a href="#projetos"><li>Projetos</li></a>
-                <a href="#contato"><li>Contato</li></a>
+
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
 
                 <li class="tema">
                     <span>Tema:</span>
 
                     <input type="checkbox" class="checkbox-tema" id="chk-tema">
                     <label class="label-tema" for="chk-tema">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
+                        <i class="bi bi-moon-fill"></i>
+                        <i class="bi bi-sun-fill"></i>
                     </label>
                 </li>
             </ul>
@@ -68,9 +80,9 @@
                 <div class="sobre-texto">
                     <h2>Sobre Mim</h2>
                     <p>Meu nome é Matheus Gustavo e comecei a me interessar por tecnologia desde cedo. Dei início aos meus estudos em programação, sempre fazendo diversos cursos. Mantenho uma dedicação constante aos estudos, com o objetivo de me tornar um desenvolvedor full-stack futuramente.</p>
-                    <p>Estou sempre em busca de aprimorar minhas habilidades por meio de cursos e dedicando-me a transformar minhas ideias em código. Atualmente, busco oportunidades para ingressar no mercado de trabalho, iniciando minha trajetória como freelancer. <span class="welcome">Bem-vindo ao meu portfólio!</span></p>
+                    <p>Estou sempre em busca de aprimorar minhas habilidades por meio de cursos e dedicando-me a transformar minhas ideias em código. Atualmente, busco oportunidades para ingressar no mercado de trabalho. <span class="welcome">Bem-vindo ao meu portfólio!</span> <span class="hand">👋</span></p>
 
-                    <a href="#">Ver CV</a>
+                    <a href="https://github.com/matheusgustavo9" target="_blank">Ver CV</a>
                 </div>
             </div>
         </section>
@@ -82,7 +94,7 @@
                     <p class="descricao descricao-texto"></p>
                     <article class="html">
                         <h3>HTML</h3>
-                        <p>Utilizo HTML5 desde, sempre priorizando a criação de uma estrutura semântica e promovendo acessibilidade para o usuário.</p>
+                        <p>Utilizo HTML5 desde sempre, priorizando a criação de uma estrutura semântica e promovendo uma experiência de usuário mais intuitiva e agradável.</p>
                     </article>
                     <article class="css">
                         <h3>CSS</h3>
@@ -100,14 +112,10 @@
                         <h3>GitHub</h3>
                         <p>Faço uso do GitHub como plataforma principal para hospedar meus repositórios, proporcionando uma gestão eficiente do versionamento e simplificando a colaboração em diferentes projetos.</p>
                     </article>
-                    <article class="figma">
-                        <h3>Figma</h3>
-                        <p>Comecei no Figma para aprimorar o design, buscando uma experiência do usuário (UX) intuitiva e uma interface (UI) cativante, tornando o site mais atrativo esteticamente.</p>
-                    </article>
-                    <article>
+                    <!-- <article>
                         <h3>React</h3>
                         <p>Sem muita familiaridade com React, estou em constante estudo para aprimorar minhas habilidades e construir projetos mais dinâmicos</p>
-                    </article>
+                    </article> -->
                 </div>
                 <div class="icon-habilidade">
                     <div class="box-hbld">
@@ -125,12 +133,9 @@
                     <div class="box-hbld github">
                         <img src="./img/github-logo-habilidade.svg" alt="GitHub">
                     </div>
-                    <div class="box-hbld figma">
-                        <img src="./img/figma-icon.svg" alt="Figma">
-                    </div>
-                    <div class="box-hbld">
+                    <!-- <div class="box-hbld">
                         <img src="./img/react.svg" alt="React">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -145,47 +150,42 @@
                             <img src="img/img-projetos/barbearia-sofisticada.png" alt="">
                         </div>
                         <div class="info-pjt">
-                            <h3>Barbearia Sofisticada</h3>
+                            <h3 class="bs">Barbearia Sofisticada</h3>
+                            <p class="texto-pjt">Desenvolvi este site logo após concluir o curso "Introdução à Programação Front-End" no Senai. Apliquei imediatamente os conhecimentos em HTML, CSS e JavaScript, marcando assim o início da minha jornada no Front-End. Utilizei referências encontradas na internet para a criação do site.</p>
                             <a href="https://matheusgustavo9.github.io/barbearia-sofisticada/" class="view-pjt" target="_blank">Ver Projeto</a>
                         </div>
                     </div>
-                    <div class="my-project">
-                        <div class="box-pjt">
-                            <div class="em-breve">
-                                <div class="loading">
-                                    
-                                </div>
+                    <div class="my-project reverse">
+                        <div class="em-breve">
+                            <div class="loading">
+                                
                             </div>
-                            <div class="info-pjt">
-                                <h3>Em Breve...</h3>
-                                <a class="view-pjt">Codando...</a>
-                            </div>
+                        </div>
+                        <div class="info-pjt">
+                            <h3 class="titulo-embreve">Em Breve...</h3>
+                            <a class="view-pjt">Codando...</a>
                         </div>
                     </div>
                     <div class="my-project">
-                        <div class="box-pjt">
-                            <div class="em-breve">
-                                <div class="loading">
-                                    
-                                </div>
-                            </div>
-                            <div class="info-pjt">
-                                <h3>Em Breve...</h3>
-                                <a class="view-pjt">Codando...</a>
+                        <div class="em-breve">
+                            <div class="loading">
+                                
                             </div>
                         </div>
+                        <div class="info-pjt">
+                            <h3 class="titulo-embreve">Em Breve...</h3>
+                            <a class="view-pjt">Codando...</a>
+                        </div>
                     </div>
-                    <div class="my-project">
-                        <div class="box-pjt">
-                            <div class="em-breve">
-                                <div class="loading">
-                                    
-                                </div>
+                    <div class="my-project reverse">
+                        <div class="em-breve">
+                            <div class="loading">
+                                
                             </div>
-                            <div class="info-pjt">
-                                <h3>Em Breve...</h3>
-                                <a class="view-pjt">Codando...</a>
-                            </div>
+                        </div>
+                        <div class="info-pjt">
+                            <h3 class="titulo-embreve">Em Breve...</h3>
+                            <a class="view-pjt">Codando...</a>
                         </div>
                     </div>
                 </div>
@@ -196,14 +196,14 @@
             <div class="container">
                 
                 <a href="https://github.com/matheusgustavo9" target="_blank">
-                    <div class="gitub box-contato">
+                    <div class="github box-contato">
                         <img src="img/github-contato.svg" alt="">
                         <h2>GitHub</h2>
-                        <p>github.com/matheusgustavo9</p>
+                        <p>/matheusgustavo9</p>
                     </div>
                 </a>
 
-                <a href="https://www.linkedin.com/in/matheusgustavofrontend/" target="_blank">
+                <a href="https://www.linkedin.com/in/matheusgustasilva/" target="_blank">
                     <div class="linkedin box-contato">
                         <img src="img/linkedin.png" alt="">
                         <h2>LinkedIn</h2>
@@ -211,7 +211,7 @@
                     </div>
                 </a>
 
-                <a href="https://wa.me/5582987530552?text=Olá+tu+é+fodah" target="_blank">
+                <a href="https://wa.me/5582987530552?text=Olá" target="_blank">
                     <div class="whatsapp box-contato">
                         <img src="img/whatsapp.svg" alt="">
                         <h2>WhatsApp</h2>
@@ -225,13 +225,13 @@
     <footer>
         <p class="container-footer">
             Copyright © 2023
-            matheusgustavo.com.br
-            Todos os direitos reservados.
+            <a href="https://www.linkedin.com/in/matheusgustasilva/" target="_blank">Matheus Gustavo</a>
+            . Todos os direitos reservados.
         </p>
     </footer>
 
     <button class="voltar-ao-topo ">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="bi bi-caret-up-fill"></i>
     </button>
 
     <script src="js/tema.js"></script>

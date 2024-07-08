@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     width: 95%;
-    padding: 0.938rem;
+    padding: 2rem 1.5rem;
     background-color: #151515;
     border-radius: 0.5rem;
     border: 0.125rem solid var(--aqua);
@@ -21,34 +21,54 @@
 
 /* "Meus Projetos" */
 .projetos h2 {
-    font-size: 2.4em;
+    font-size: 2.2em;
+    font-family: "Poppins";
     margin: 0 0 0.625rem 0;
-    color: var(--cian);
+    color: var(--roxoclaro);
+    text-decoration: 1px underline;
+    text-underline-offset: 3px;
+    letter-spacing: 2px;
 }
 
 /* Todos os Projetos */
 .all-projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.938rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .my-project {
+    display: flex;
+    align-items: center;
+    width: 98%;
+    height: 43vh;
+    gap: 20px;
     transition: all .5s ease;
     box-shadow: 0.125rem 0.125rem 0.625rem #202020;
     border-radius: 0.938rem;
 }
 
+.my-project.reverse {
+    flex-direction: row-reverse;
+}
+
 .my-project:hover {
-    box-shadow: 0 0 0.625rem var(--blue);
+    box-shadow: 0 0 0.625rem var(--roxoescuro);
 } 
 
 /* As imagens dos projetos */
+.img-projeto {
+    width: 40%;
+    height: 100%;
+}
+
 .img-projeto img {
-    width: 23.75rem;
-    border-radius: 0.938rem 0.938rem 0 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.938rem;
     margin-bottom: -0.313rem;
 }
 
@@ -56,17 +76,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 23.75rem;
-    height: 28vh;
+    width: 40%;
+    height: 100%;
     background-color: #1A1A1A;
-    border-radius: 0.938rem 0.938rem 0 0;
+    border-radius: 0.938rem;
 }
 
 .loading {
     width: 5rem;
     height: 5rem;
-    border: 0.5rem solid #434343;
-    border-top-color: var(--blue);
+    border: 0.6rem solid #434343;
+    border-top-color: var(--roxoescuro);
     border-radius: 50%;
     animation: loading 1s infinite linear;
 }
@@ -81,38 +101,66 @@
 .info-pjt {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    width: 60%;
     padding: 0.625rem;
-    backdrop-filter: blur(0.625rem);
     border-radius: 0 0 0.938rem 0.938rem;
-    gap: 0.313rem;
+}
+
+.my-project.reverse:nth-child(2n) .info-pjt {
+    align-items: flex-end;
+}
+
+.titulo-embreve {
+    color: var(--roxo);
 }
 
 /* Título do Projeto */
 .info-pjt h3 {
-    font-size: 1.4em;
-    margin: 0.313rem 0.125rem 0.313rem 0.313rem;
-    text-decoration: underline;
-    text-align: center;
+    font-size: 1.7em;
+    font-family: "Poppins";
+    margin: 0 0 0.313rem 0;
+    text-decoration: 1px underline;
+    text-underline-offset: 2px;
+    letter-spacing: 1px;
+}
+
+.info-pjt .bs {
+    color: #EFB43A;
+}
+
+.texto-pjt {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.55rem;
+    margin: 0 0 0.938rem 0;
+    font-family: "Poppins";
 }
 
 .view-pjt {
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.75rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.8rem;
+    width: 12.5rem;
     font-size: 1.2em;
     font-weight: 600;
-    background-color: #1A1A1A;
+    font-family: "Poppins";
+    letter-spacing: 2px;
+    color: var(--textcolordark);
+    border-radius: 0.625rem;
     text-decoration: none;
-    color: #f5f5f5;
-    transition: all .5s ease-in-out;
+    background-color: var(--bgbtncolordark);
+    box-shadow: 0.063rem 0.063rem 0.938rem var(--bgbtncolordark);
+    transition: all .3s ease-in-out;
 }
 
+/* Mudar a Color, Background-color e adicionar um box-shadow */
 .view-pjt:hover {
-    box-shadow: 0 0 0.75rem var(--cian);
-    color: #1A1A1A;
-    background-color: #f5f5f5;
+    box-shadow: 0.1rem 0.1rem 1.1rem var(--aqua);
+    color: var(--textcolorlight);
+    background-color: var(--hoverbgbtncolordark);
 }
 
 .all-projects .my-project:nth-child(2) .view-pjt,
