@@ -15,7 +15,7 @@
     background-color: #151515;
     border-radius: 0.5rem;
     border: 0.125rem solid var(--aqua);
-    animation: animation-border 1s linear infinite alternate ;
+    animation: animation-border 1.5s ease-in-out infinite alternate;
     box-shadow: 0.125rem 0.125rem 0.625rem #2b2b2b;
 }
 
@@ -34,8 +34,8 @@
 .all-projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
+    gap: 30px;
     width: 100%;
     margin-top: 15px;
 }
@@ -167,16 +167,4 @@
 .my-project:nth-child(3) .view-pjt,
 .my-project:nth-child(4) .view-pjt {
     cursor: not-allowed;
-}
-
-@keyframes animation-border {
-    0% {
-        border-color: var(--aqua);
-    }
-    50% {
-        border-color: var(--cian);
-    }
-    100% {
-        border-color: var(--blue);
-    }
 }

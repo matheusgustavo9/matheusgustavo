@@ -6,7 +6,7 @@ footer {
     height: 8vh;
 
     border-top: 0.125rem solid var(--aqua);
-    animation: animation-border 1s linear infinite alternate both;
+    animation: animation-border 1.5s ease-in-out infinite alternate;
 }
 
 footer p {
@@ -20,30 +20,72 @@ footer a {
     color: var(--roxo);
 }
 
+
+.ponto {
+    color: var(--aqua);
+}
+
 .voltar-ao-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 1.25rem;
     right: 1.25rem;
-    padding: 0.625rem;
-    border-radius: 0.625rem;
+    padding: 0.8rem;
+    border-radius: 50%;
     border: none;
     outline: none;
-    box-shadow: 0 0 0.75rem var(--blue);
+    box-shadow: 0 0 0.75rem var(--roxo);
     background-color: #1a1a1a;
     cursor: pointer;
-    transition: all .5s ease-out;
+    transition: all .3s ease-in-out;
+    z-index: 10;
 }
 
 .voltar-ao-topo:hover {
     background-color: #f5f5f5;
     box-shadow: 0 0 0.75rem var(--aqua);
+    color: #111;
 }
 
-.voltar-ao-topo:hover .fa-arrow-up {
+.voltar-ao-topo:hover .fa-solid {
     color: #1a1a1a;
 }
 
-.fa-arrow-up {
-    font-size: 1.5em;
+.bi-caret-up-fill, .fa-solid {
+    font-size: 1em;
     color: #f5f5f5;
+}
+
+.hidden {
+    visibility: hidden;
+    animation: sumir .2s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes sumir {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.voltar-ao-topo:not(.hidden) {
+    animation: aparecer .2s ease-in-out;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

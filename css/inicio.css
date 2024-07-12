@@ -21,7 +21,7 @@ header {
     padding: 10px 40px;
     height: 12.1vh;
     border-bottom: 2px solid var(--aqua);
-    animation: animation-border 1s linear infinite alternate both;
+    animation: animation-border 1.5s ease-in-out infinite alternate;
 }
 
 /* Navegação */
@@ -174,7 +174,7 @@ header {
 
 section {
     opacity: 0;
-    transform: translateX(-150px);
+    transform: translateX(-25vw);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -183,15 +183,20 @@ section.active {
     transform: translateX(0);
 }
 
-/* Animações do border-bottom do header */
-@keyframes animation-border-header {
+@keyframes animation-border {
     0% {
-        border-color: var(--aqua);
+        border-color: #6a0dad;
+    }
+    25% {
+        border-color: #612cb2;
     }
     50% {
-        border-color: var(--cian);
+        border-color: #5650b8;
+    }
+    75% {
+        border-color: #4a77bf;
     }
     100% {
-        border-color: var(--blue);
+        border-color: #2fcfcf;
     }
 }

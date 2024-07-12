@@ -1,20 +1,25 @@
-const voltarAoTopo = document.querySelector(".voltar-ao-topo")
+const voltarAoTopo = document.querySelector(".voltar-ao-topo");
 
-voltarAoTopo.onclick = () => {
-    const scrollStep = -window.scrollY / (0.04 * 1000);
-    const scrollInterval = setInterval(function() {
-    if (window.scrollY !== 0) {
-        window.scrollBy(0, scrollStep);
-    } else {
-        clearInterval(scrollInterval);
-    }
+voltarAoTopo.addEventListener('click', () => {
+    const passoDeRolagem = -window.scrollY / (0.04 * 1000);
+    const tempoDeIntervalo = setInterval(function() {
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, passoDeRolagem);
+        } else {
+            clearInterval(tempoDeIntervalo);
+        }
     }, 15);
-};
+});
 
 window.onload = () => {
-    voltarAoTopo.hidden = true;
+    voltarAoTopo.classList.add('hidden');
 };
 
 window.onscroll =  () => {
-    voltarAoTopo.hidden = !(document.documentElement.scrollTop > 250)
+    voltarAoTopo.hidden = !(document.scrollTop > 200)
+    if(window.scrollY >= 200) {
+        voltarAoTopo.classList.remove('hidden')
+    } else {
+        voltarAoTopo.classList.add('hidden');
+    }
 }
